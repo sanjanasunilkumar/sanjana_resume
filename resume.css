@@ -1,0 +1,155 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    background-color:rgb(146, 162, 195);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    position: relative;
+    width: 100%;
+    margin: 50px;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: rgb(146, 162, 195);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,1);
+    margin-top: 50px;
+}
+
+
+ /* .profiletext{
+    position: relative;
+   display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    padding-bottom: 20px; 
+    
+}  */
+
+.container .left-side{
+    position: relative;
+    background:hsl(261deg 25% 41%);
+    padding: 40px;
+    margin-left: -12px;
+    margin-top: 0px;
+    margin-right: 0px;
+    
+}
+.container .right-side{
+    position: relative;
+    background:#fff;
+
+    padding: 40px;
+    margin-left: -12px;
+
+}
+h1{
+    color:black;
+    font-weight: 20px;
+    font-size: 26px;
+    font-family:'Times New Roman', Times, serif;
+}
+h2{
+    color:black;
+    font-size: 22px;
+    font-weight: 0px;
+    font-style: normal;
+    font-family:'Times New Roman', Times, serif;
+}
+.contactinfo{
+    padding-top: 40px;
+}
+.title{
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 2px;
+    color: #161515;
+    font-weight: 500px;
+
+
+}
+.contactinfo ul{
+    position: relative;
+    color:#362f2f;
+}
+.contactinfo ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.contactinfo ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #003147;
+}
+.contactinfo ul li .span{
+    color:#333;
+    font-weight: 300px;
+}
+.contactinfo education li{
+    margin-bottom: 15px;
+}
+.contactinfo.education h5{
+    color:#d6c6c6;
+    font-weight: 500px;
+}
+.contactinfo.education h6{
+    color:#171616;
+
+}
+
+.interest ul{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+
+}
+.interest ul li{
+list-style: none;
+color:#333;
+font-weight: 500px;
+margin: 10px 0;
+}
+.interest ul li{
+color: #003147;
+}
+.add-on h5{
+    color: #2a2829;
+    font-weight: 500px;
+}
+
+@media (max-width: 400px)
+{
+    .container{
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .interest ul{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width:600px)
+{
+    .about .box{
+        flex-direction: column;
+    }
+    .about .box .year_company{
+        margin: bottom 5px;;
+    }
+    .interest ul{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .skills .box{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
